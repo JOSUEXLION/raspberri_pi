@@ -1,6 +1,12 @@
 import RPi.GPIO as GPIO
 import time 
-#GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(17, GPIO.OUT) 
+GPIO.setup(4, GPIO.OUT)
+GPIO.setup(3, GPIO.OUT)
+GPIO.setup(2, GPIO.OUT)
+
+GPIO.setwarnings(False) 
 
 lhoradec=[17,4,3,2]
 lhorauni=[25,23,22,27]
